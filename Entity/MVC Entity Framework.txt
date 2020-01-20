@@ -1,0 +1,38 @@
+Fazendo um CRUD usando MVC Entity Framework
+
+
+0. Crie um novo projeto ASP.NET Web Application(.NET Framework) no VS, Selecione o template MVC, e marque a checkbox ' MVC ', No authentichation
+
+
+
+1. Models:
+
+Criar classe que contém os atributos com getters e setters.
+
+Criar classe de conexão com o Banco de dados(ContextApp), inserir a conection string(que fica no arquivo Web.config).
+
+
+2. Repository:
+
+Criar classe Repository genérica (herdando de IDisposable) com os métodos Dispose,Commit,Edit, FindAll, FindBy, Remove e Add.
+
+
+3.UnitOfWork:
+
+Criar classe UnitOfWork que ira ter uma instância do ContextApp e do Repository , 
+verificar se já existe uma instancia do Repository se já existe retorna a instancia, senão, cria uma instancia.
+
+4.Controllers:
+
+Criar a classe Controlador
+Criar o código para cada método e atribuir suas respectivas Views.
+
+5. Banco de Dados:
+
+Criar banco de dados local na pasta AppData (SQL Server Database)
+
+
+
+
+
+CURSO RECOEMDADO: https://www.udemy.com/course/aspnet-mvc-com-ef/
